@@ -1,0 +1,2 @@
+# Credit_Manager
+はじめてのハッカソン
