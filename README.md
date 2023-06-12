@@ -1,4 +1,4 @@
-# Credit_Manager
+# sharedule
 はじめてのハッカソン
 
 ## 作品名
@@ -24,9 +24,9 @@
   <tr>
     <th>担当</th>
     <td>
-      <a href="https://github.com/NAVYSHUNTA">@Shunta Nakamura</a> : バックエンド<br>
-      <a href="https://github.com/nekoy3">@nekoy3</a> : バックエンド<br>
-      <a href="https://github.com/k21rs085">@Yuto TSUMAGARI</a> : フロントエンド<br>
+      <a href="https://github.com/NAVYSHUNTA">@Shunta Nakamura</a>：バックエンド<br>
+      <a href="https://github.com/nekoy3">@nekoy3</a>：バックエンド<br>
+      <a href="https://github.com/k21rs085">@Yuto TSUMAGARI</a>：フロントエンド<br>
       <a href="https://github.com/k21rs089">@nakagaki itsuki k21rs089</a>：フロントエンド<br>
     </td>
   </tr>
@@ -36,7 +36,7 @@
   </tr>
   <tr>
     <th>主要技術</th>
-    <td>フロントエンド： <br>
-        バックエンド： <br>
+    <td>フロントエンド：<br>
+        バックエンド：<br>
   </tr>
 </table>
