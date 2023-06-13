@@ -20,6 +20,8 @@
     <a href="theme.php" class="btn btn-flat"><span>課題</span></a>
     <a href="friendList.php" class="btn btn-flat"><span>フレンドリスト</span></a>
     <a href="setting.php" class="btn btn-flat"><span>設定</span></a>
+    <a class="btn btn-flat"><span>福岡　太郎</span></a>
+    <a href="sys_login.php" class="btn btn-flat"><span>ログアウト</span></a>
     <h1>フレンドリスト</h1>
   </div>
 </body>
