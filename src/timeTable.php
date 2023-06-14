@@ -20,6 +20,12 @@
     <a href="theme.php" class="btn btn-flat"><span>課題</span></a>
     <a href="friendList.php" class="btn btn-flat"><span>フレンドリスト</span></a>
     <a href="setting.php" class="btn btn-flat"><span>設定</span></a>
+<<<<<<< HEAD
+=======
+    <a class="btn btn-flat"><span>福岡　太郎</span></a>
+    <a href="sys_login.php" class="btn btn-flat"><span>ログアウト</span></a>
+    <h1>時間割（初期画面）</h1>
+>>>>>>> a5ba5751d6d4a1aa1bc8a5b3a3570ef2b2437451
   </div>
   <table id="myTable">
     <tr>
