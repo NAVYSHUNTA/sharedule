@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <title>sharedule</title>
   <script>
     window.onload = function() {
@@ -70,7 +70,7 @@
 =======
     <!--表題に試作としてわかりやすいように何のページか表しております（不必要であれば排除お願いします！）-->
 >>>>>>> a5ba5751d6d4a1aa1bc8a5b3a3570ef2b2437451
-    <a href="timeTable.php" style="width: 80px; height: 30px;"><img src="images/logo.png" alt="メニュー1" /></a>
+    <a href="timeTable.php" style="width: 80px; height: 30px;"><img src="../images/logo.png" alt="メニュー1" /></a>
     <a href="theme.php" class="btn btn-flat"><span>課題</span></a>
     <a href="friendList.php" class="btn btn-flat"><span>フレンドリスト</span></a>
     <a href="setting.php" class="btn btn-flat"><span>設定</span></a>

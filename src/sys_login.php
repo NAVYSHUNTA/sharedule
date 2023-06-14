@@ -26,7 +26,7 @@
         <tr>
             <td colspan="2">
                 <div class="image-container">
-                    <img src="images/logo.png">
+                    <img src="../images/logo.png">
                 </div>
             </td>
         </tr>
