@@ -74,3 +74,74 @@ img {
     height: 5%;
     vertical-align: middle;
 }
+
+.list-container {
+  height: 400px;
+  width: 50%;
+  overflow: auto;
+}
+
+.table-container {
+  height: 400px;
+  width: 45%;
+  overflow: auto;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+text-box{
+    position: fixed;
+    top:0;
+    right:1000;
+}
+
+th, td {
+  border: 1px solid black;
+  width: 900px;
+  height: 100px;
+  padding: 8px;
+}
+
+#textbox-container {
+    position: fixed;
+    top: 150px;
+    right:225px;
+    width: 400px;
+    height: 150px;
+    border: 1px solid #000;
+  }
+
+  #my-textbox {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 200px;
+    height: 30px;
+  }
+
+  .list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid gray;
+  }
+
+  #myTable {
+    position: absolute;
+    border-collapse: collapse;
+    top:300px;
+  }
+
+  #myTable td {
+    position: relative;
+    height: 75px;
+    width :150px;
+    border: 1px solid black;
+    top:0px;
+  }
