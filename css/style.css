@@ -170,3 +170,21 @@ th, td {
     border: 1px solid black;
     top:0px;
   }
+
+/*setting画面用*/
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+}
+
+.left-column {
+  flex: 1;
+  margin-top: -5px; /* 上部に空白を作成・必要に応じて数字変更をお願いします */
+}
+
+.right-column {
+  flex: 1;
+  margin-top: -5px; /* 上部に空白を作成・必要に応じて数字変更をお願いします */
+}

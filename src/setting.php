@@ -8,39 +8,21 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
 
-    <style>
-        /*1行目のラジオボタンの位置、フォントサイズの設定 */
-        label {
-            font-size: 30px;
-            display: flex;
-            align-items: center;
-            margin-top: 40px; /* ラベルの上側のマージンを追加 */
-        }
-        /*2行目のラジオボタンの位置、フォントサイズの設定 */
-        label2 {
-          font-size: 30px;
-            display: flex;
-            align-items: center;
-            margin-top: -60px; /* ラベルの上側のマージンを追加 */
-        }
-        /*3行目のラジオボタンの位置、フォントサイズの設定 */
-        label3 {
-          font-size: 30px;
-            display: flex;
-            align-items: center;
-            margin-top: -40px; /* ラベルの上側のマージンを追加 */
+    <title>sharedule</title>
+  <style>
+    h2{
+          font-size: 25px;
         }
 
         input[type="radio"] {
             margin-right: 20px; /* ラジオボタンとテキストの間のマージンを追加 */
             transform: scale(1.5); /* ラジオボタンの大きさを変更 */
         }
-        
+    p{
+      font-size: 13px;
+    }
 
-
-    </style>
-
-    <title>sharedule</title>
+  </style>
 </head>
 <body>
   <!-- メニューバーの表示 -->
@@ -54,30 +36,59 @@
     <a href="setting.php" class="btn btn-flat"><span>設定</span></a>
     <a class="btn btn-flat"><span>福岡　太郎</span></a>
     <a href="sys_login.php" class="btn btn-flat"><span>ログアウト</span></a><br>
-
-    <!--1行目-->
-    <label>
-      <input type="radio" name="setting" value="a" style="vertical-align: middle;">
-      <h3>ここに設定を追加－1</h3>
-      <input type="radio" name="setting" value="a" style="vertical-align: middle;">
-      <h3>ここに設定を追加－2</h3>
-    </label><br>
-    <!--2行目-->
-    <label2>
-      <input type="radio" name="setting" value="a" style="vertical-align: middle;">
-      <h3>ここに設定を追加－3</h3>
-      <input type="radio" name="setting" value="a" style="vertical-align: middle;">
-      <h3>ここに設定を追加－4</h3>
-    </label2>
-
-    <!--3行目-->
-    <label3>
-      <input type="radio" name="setting" value="a" style="vertical-align: middle;">
-      <h3>ここに設定を追加－5</h3>
-      <input type="radio" name="setting" value="a" style="vertical-align: middle;">
-      <h3>ここに設定を追加－6</h3>
-    </label3>
-
   </div>
-</body>
+
+  <div class="container">
+    <div class="left-column">
+        <h2>ダークモード</h2>
+        <p>
+            &emsp;
+            <input type="radio" name="screen_mode" value="はい">ON&emsp;&emsp;
+            <input type="radio" name="screen_mode" value="いいえ" checked>OFF
+        </p>
+        <h2>何日前に警告を出すか？</h2>
+        <p>
+            &emsp;
+            <input type="radio" name="alert_days_before" value="1">1&emsp;&emsp;
+            <input type="radio" name="alert_days_before" value="2">2&emsp;&emsp;
+            <input type="radio" name="alert_days_before" value="2" checked>3&emsp;&emsp;
+            <input type="radio" name="alert_days_before" value="2">4&emsp;&emsp;
+            <input type="radio" name="alert_days_before" value="2">5&emsp;&emsp;
+        </p>
+        <h2>ここに設定項目を追加</h2>
+        <p>
+            &emsp;
+        </p>
+        <h2>ここに設定項目を追加</h2>
+        <p>
+            &emsp;
+        </p>
+        <h2>ここに設定項目を追加</h2>
+        <p>
+            &emsp;
+        </p>
+    </div>
+    <div class="right-column">
+        <h2>ここに設定項目を追加</h2>
+        <p>
+            &emsp;
+        </p>
+        <h2>ここに設定項目を追加</h2>
+        <p>
+            &emsp;
+        </p>
+        <h2>ここに設定項目を追加</h2>
+        <p>
+            &emsp;
+        </p>
+        </p>
+        <h2>ここに設定項目を追加</h2>
+        <p>
+            &emsp;
+        </p>
+        <h2>ここに設定項目を追加</h2>
+        <p>
+            &emsp;
+        </p>
+    </div>
 </html>
