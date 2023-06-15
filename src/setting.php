@@ -38,57 +38,58 @@
     <a href="sys_login.php" class="btn btn-flat"><span>ログアウト</span></a><br>
   </div>
 
-  <div class="container">
-    <div class="left-column">
-        <h2>ダークモード</h2>
-        <p>
-            &emsp;
-            <input type="radio" name="screen_mode" value="はい">ON&emsp;&emsp;
-            <input type="radio" name="screen_mode" value="いいえ" checked>OFF
-        </p>
-        <h2>何日前に警告を出すか？</h2>
-        <p>
-            &emsp;
-            <input type="radio" name="alert_days_before" value="1">1&emsp;&emsp;
-            <input type="radio" name="alert_days_before" value="2">2&emsp;&emsp;
-            <input type="radio" name="alert_days_before" value="2" checked>3&emsp;&emsp;
-            <input type="radio" name="alert_days_before" value="2">4&emsp;&emsp;
-            <input type="radio" name="alert_days_before" value="2">5&emsp;&emsp;
-        </p>
-        <h2>ここに設定項目を追加</h2>
-        <p>
-            &emsp;
-        </p>
-        <h2>ここに設定項目を追加</h2>
-        <p>
-            &emsp;
-        </p>
-        <h2>ここに設定項目を追加</h2>
-        <p>
-            &emsp;
-        </p>
-    </div>
-    <div class="right-column">
-        <h2>ここに設定項目を追加</h2>
-        <p>
-            &emsp;
-        </p>
-        <h2>ここに設定項目を追加</h2>
-        <p>
-            &emsp;
-        </p>
-        <h2>ここに設定項目を追加</h2>
-        <p>
-            &emsp;
-        </p>
-        </p>
-        <h2>ここに設定項目を追加</h2>
-        <p>
-            &emsp;
-        </p>
-        <h2>ここに設定項目を追加</h2>
-        <p>
-            &emsp;
-        </p>
+    <div class="container">
+        <div class="left-column">
+            <h2>ダークモード</h2>
+            <p>
+                &emsp;
+                <input type="radio" name="screen_mode" value="はい">ON&emsp;&emsp;
+                <input type="radio" name="screen_mode" value="いいえ" checked>OFF
+            </p>
+            <h2>何日前に警告を出すか？</h2>
+            <p>
+                &emsp;
+                <input type="radio" name="alert_days_before" value="1">1&emsp;&emsp;
+                <input type="radio" name="alert_days_before" value="2">2&emsp;&emsp;
+                <input type="radio" name="alert_days_before" value="2" checked>3&emsp;&emsp;
+                <input type="radio" name="alert_days_before" value="2">4&emsp;&emsp;
+                <input type="radio" name="alert_days_before" value="2">5&emsp;&emsp;
+            </p>
+            <h2>ここに設定項目を追加</h2>
+            <p>
+                &emsp;
+            </p>
+            <h2>ここに設定項目を追加</h2>
+            <p>
+                &emsp;
+            </p>
+            <h2>ここに設定項目を追加</h2>
+            <p>
+                &emsp;
+            </p>
+        </div>
+        <div class="right-column">
+            <h2>ここに設定項目を追加</h2>
+            <p>
+                &emsp;
+            </p>
+            <h2>ここに設定項目を追加</h2>
+            <p>
+                &emsp;
+            </p>
+            <h2>ここに設定項目を追加</h2>
+            <p>
+                &emsp;
+            </p>
+            </p>
+            <h2>ここに設定項目を追加</h2>
+            <p>
+                &emsp;
+            </p>
+            <h2>ここに設定項目を追加</h2>
+            <p>
+                &emsp;
+            </p>
+        </div>
     </div>
 </html>
