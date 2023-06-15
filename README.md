@@ -1,8 +1,11 @@
-# sharedule
-はじめてのハッカソン
-現在3人が参加済み
+# はじめてのハッカソン
+
+![ロゴの画像](https://github.com/NAVYSHUNTA/sharedule/blob/main/images/logo.png)
 
 ## 作品名
+**sharedule(シェアジュール)**
+
+share × schedule
 
 ## 背景
 
