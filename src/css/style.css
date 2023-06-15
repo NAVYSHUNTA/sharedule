@@ -81,9 +81,33 @@ img {
   overflow: auto;
 }
 
+.themelist-container {
+  height: 400px;
+  width: 50%;
+  overflow: auto;
+}
+
 .table-container {
   height: 400px;
   width: 45%;
+  overflow: auto;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.table-container {
+  height: 400px;
+  width: 45%;
+  overflow: auto;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.friend-container {
+  height: 500px;
+  width: 37%;
   overflow: auto;
   position: absolute;
   bottom: 0px;
@@ -106,6 +130,7 @@ th, td {
   height: 100px;
   padding: 8px;
 }
+
 
 #textbox-container {
     position: fixed;

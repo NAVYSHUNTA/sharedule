@@ -44,7 +44,7 @@
       var listTbody = document.createElement("tbody");
 
       // データ行の作成
-      for (var i = 1; i <= 30; i++) {
+      for (var i = 1; i <= 20; i++) {
         var listDataRow = document.createElement("tr");
         var listDataCell1 = document.createElement("td");
         listDataCell1.textContent = "リストデータ00" + i;
@@ -65,21 +65,19 @@
   <div class="navbar">
     <!--#にリンクを挿入-->
     <!--画像が挿入されているところは、ホームに遷移するためのボタンです-->
-<<<<<<< HEAD
+
     
-=======
+
     <!--表題に試作としてわかりやすいように何のページか表しております（不必要であれば排除お願いします！）-->
->>>>>>> a5ba5751d6d4a1aa1bc8a5b3a3570ef2b2437451
+
     <a href="timeTable.php" style="width: 80px; height: 30px;"><img src="images/logo.png" alt="メニュー1" /></a>
     <a href="theme.php" class="btn btn-flat"><span>課題</span></a>
     <a href="friendList.php" class="btn btn-flat"><span>フレンドリスト</span></a>
     <a href="setting.php" class="btn btn-flat"><span>設定</span></a>
-<<<<<<< HEAD
-=======
+
+
     <a class="btn btn-flat"><span>福岡　太郎</span></a>
     <a href="sys_login.php" class="btn btn-flat"><span>ログアウト</span></a>
-    <h1>フレンドリスト</h1>
->>>>>>> a5ba5751d6d4a1aa1bc8a5b3a3570ef2b2437451
   </div>
   
   <div id="table-container" class="table-container"></div>

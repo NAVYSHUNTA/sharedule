@@ -20,12 +20,9 @@
     <a href="theme.php" class="btn btn-flat"><span>課題</span></a>
     <a href="friendList.php" class="btn btn-flat"><span>フレンドリスト</span></a>
     <a href="setting.php" class="btn btn-flat"><span>設定</span></a>
-<<<<<<< HEAD
-=======
     <a class="btn btn-flat"><span>福岡　太郎</span></a>
     <a href="sys_login.php" class="btn btn-flat"><span>ログアウト</span></a>
     <h1>時間割（初期画面）</h1>
->>>>>>> a5ba5751d6d4a1aa1bc8a5b3a3570ef2b2437451
   </div>
   <table id="myTable">
     <tr>
@@ -87,6 +84,57 @@
   <div id="listContainer" class="list"></div>
 
   <script>
+
+window.onload = function() {
+      var tableContainer = document.getElementById("friend-container");
+      var table = document.createElement("table");
+
+      var thead = document.createElement("thead");
+      var tbody = document.createElement("tbody");
+
+      // ヘッダー行の作成
+      var headerRow = document.createElement("tr");
+      var headerCell1 = document.createElement("th");
+      headerCell1.textContent = "　　友達一覧　　";
+      headerRow.appendChild(headerCell1);
+      thead.appendChild(headerRow);
+
+      // データ行の作成
+      for (var i = 1; i <= 20; i++) {
+        var dataRow = document.createElement("tr");
+        var dataCell1 = document.createElement("td");
+        dataCell1.textContent = "データ00" + i;
+        dataRow.appendChild(dataCell1);
+        tbody.appendChild(dataRow);
+      }
+
+      table.appendChild(thead);
+      table.appendChild(tbody);
+
+      tableContainer.appendChild(table);
+
+
+      var listContainer = document.getElementById("themelist-container");
+      var listTable = document.createElement("table");
+
+      var listTbody = document.createElement("tbody");
+
+      // データ行の作成
+      for (var i = 1; i <= 20; i++) {
+        var listDataRow = document.createElement("tr");
+        var listDataCell1 = document.createElement("td");
+        listDataCell1.textContent = "リストデータ00" + i;
+        listDataRow.appendChild(listDataCell1);
+        listTbody.appendChild(listDataRow);
+      }
+
+      listTable.appendChild(listTbody);
+
+      listContainer.appendChild(listTable);
+      listContainer.style.height = '175px'; // 表示する行数に応じて調整
+      listContainer.style.width = '54%';
+      listContainer.style.overflowY = 'scroll';
+    };
     var table = document.getElementById("myTable");
     var cells = table.getElementsByTagName("td");
     var listContainer = document.getElementById("listContainer");
@@ -154,5 +202,7 @@
 
     
   </script>
+  <div id="friend-container" class="friend-container"></div>
+  <div id="themelist-container" class="themelist-container"></div>
 </body>
 </html>
