@@ -9,17 +9,35 @@
     <link rel="stylesheet" href="../css/style.css">
 
     <style>
-         /* ラジオボックスのラベルの文字の大きさと位置を変える */
-         label {
+        /*1行目のラジオボタンの位置、フォントサイズの設定 */
+        label {
             font-size: 30px;
-            display: block;
-            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            margin-top: 40px; /* ラベルの上側のマージンを追加 */
+        }
+        /*2行目のラジオボタンの位置、フォントサイズの設定 */
+        label2 {
+          font-size: 30px;
+            display: flex;
+            align-items: center;
+            margin-top: -60px; /* ラベルの上側のマージンを追加 */
+        }
+        /*3行目のラジオボタンの位置、フォントサイズの設定 */
+        label3 {
+          font-size: 30px;
+            display: flex;
+            align-items: center;
+            margin-top: -40px; /* ラベルの上側のマージンを追加 */
         }
 
         input[type="radio"] {
-            vertical-align: middle;
-            margin-top: 25px;
+            margin-right: 20px; /* ラジオボタンとテキストの間のマージンを追加 */
+            transform: scale(1.5); /* ラジオボタンの大きさを変更 */
         }
+        
+
+
     </style>
 
     <title>sharedule</title>
@@ -36,10 +54,30 @@
     <a href="setting.php" class="btn btn-flat"><span>設定</span></a>
     <a class="btn btn-flat"><span>福岡　太郎</span></a>
     <a href="sys_login.php" class="btn btn-flat"><span>ログアウト</span></a><br>
-    <input type="radio" name="setting" value="a"/>
-    <label for="a-radio">ここに設定を追加－1</label>
 
-    
+    <!--1行目-->
+    <label>
+      <input type="radio" name="setting" value="a" style="vertical-align: middle;">
+      <h3>ここに設定を追加－1</h3>
+      <input type="radio" name="setting" value="a" style="vertical-align: middle;">
+      <h3>ここに設定を追加－2</h3>
+    </label><br>
+    <!--2行目-->
+    <label2>
+      <input type="radio" name="setting" value="a" style="vertical-align: middle;">
+      <h3>ここに設定を追加－3</h3>
+      <input type="radio" name="setting" value="a" style="vertical-align: middle;">
+      <h3>ここに設定を追加－4</h3>
+    </label2>
+
+    <!--3行目-->
+    <label3>
+      <input type="radio" name="setting" value="a" style="vertical-align: middle;">
+      <h3>ここに設定を追加－5</h3>
+      <input type="radio" name="setting" value="a" style="vertical-align: middle;">
+      <h3>ここに設定を追加－6</h3>
+    </label3>
+
   </div>
 </body>
 </html>
