@@ -16,7 +16,7 @@
   <div class="navbar">
     <!--#にリンクを挿入-->
     <!--画像が挿入されているところは、ホームに遷移するためのボタンです-->
-    <a href="timeTable.php" style="width: 80px; height: 30px;"><img src="../images/logo.png" alt="メニュー1" /></a>
+    <a href="timeTable.php" style="width: 80px; height: 30px;"><img src="./images/logo.png" alt="メニュー1" /></a>
     <a href="theme.php" class="btn btn-flat"><span>課題</span></a>
     <a href="friendList.php" class="btn btn-flat"><span>フレンドリスト</span></a>
     <a href="setting.php" class="btn btn-flat"><span>設定</span></a>
