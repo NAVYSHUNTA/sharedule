@@ -24,7 +24,6 @@
 
 <body>
     <?php
-    session_start();
     if (isset($_SESSION['login_error'])) {
         echo '<p style="color: red;">' . $_SESSION['login_error'] . '</p>';
         unset($_SESSION['login_error']); // エラーメッセージを表示後に削除する
