@@ -29,7 +29,7 @@
         unset($_SESSION['login_error']); // エラーメッセージを表示後に削除する
     }
     ?>
-    <form action="?do=sys_check.php" method="post">
+    <form action="sys_check" method="post">
         <table>
             <tr>
                 <td colspan="2">
