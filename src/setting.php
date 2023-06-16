@@ -80,7 +80,7 @@
             </p>
         </div>
         <div class="right-column">
-            <h2>通知設定</h2>
+            <h2>通知</h2>
             <p>
                 &emsp;
                 <input type="radio" name="personal_information" value="on" checked>ON&emsp;&emsp;
