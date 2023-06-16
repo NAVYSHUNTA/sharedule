@@ -16,10 +16,10 @@
         }
 
         input[type="radio"] {
-            margin-right: 20px;
             /* ラジオボタンとテキストの間のマージンを追加 */
-            transform: scale(1.5);
+            margin-right: 20px;
             /* ラジオボタンの大きさを変更 */
+            transform: scale(1.5);
         }
 
         p {
