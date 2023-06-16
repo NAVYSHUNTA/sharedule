@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<style>
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; /* 画面全体の高さに設定 */
-        flex-direction: column;
-    }
 
-    .input-container {
-        text-align: center;
-    }
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .input-container {
+            text-align: center;
+        }
 
     .button-container {
         text-align: center;
@@ -38,13 +39,20 @@
 
 </style>
 </head>
+
 <body>
-<form action="wp06check.php" method="post">
-    <table>
-        <tr>
-            <td colspan="2">
-                <div class="image-container">
-                    <img src="../images/logo.png">
+<?php
+    if (isset($_SESSION['login_error'])) {
+        echo '<p style="color: red;">' . $_SESSION['login_error'] . '</p>';
+        unset($_SESSION['login_error']); // エラーメッセージを表示後に削除する
+    }
+?>
+    <form action="?do=sys_check" method="post">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <div class="image-container">
+                        <img src="../images/logo.png">
                 </div>
             </td>
         </tr>
@@ -64,4 +72,5 @@
     </div>
 </form>
 </body>
+
 </html>
