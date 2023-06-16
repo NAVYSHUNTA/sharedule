@@ -21,7 +21,14 @@
 </style>
 </head>
 <body>
-<form action="wp06check.php" method="post">
+<?php
+  session_start();
+  if (isset($_SESSION['login_error'])) {
+    echo '<p style="color: red;">' . $_SESSION['login_error'] . '</p>';
+    unset($_SESSION['login_error']); // エラーメッセージを表示後に削除する
+  }
+?>
+<form action="sys_check.php" method="post">
     <table>
         <tr>
             <td colspan="2">
@@ -41,7 +48,7 @@
     </table>
     <div class="button-container">
         <input type="submit" value="登録">
-        <input type="submit" value="ログイン">
+        <input type="login" value="ログイン">
         <!--ボタンの機能はまだ触ってないです-->
     </div>
 </form>
