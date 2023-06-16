@@ -6,13 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- CSS -->
+  <style>
+    .table-container th{
+      background: linear-gradient(to bottom right,#E6F1FF, #FFFFFF);
+}
+    .table-container tr{
+  background: linear-gradient(to bottom right, #ecece6, #FFFFFF);
+}
+    .list-container th{
+      background: linear-gradient(to bottom left,#E6F1FF, #FFFFFF);
+}
+    .list-container tr{
+  background: linear-gradient(to bottom right, #ecece6, #FFFFFF);
+}
+  </style>
   <link rel="stylesheet" href="../css/style.css">
   <title>sharedule</title>
   <script>
     window.onload = function() {
       var tableContainer = document.getElementById("table-container");
       var table = document.createElement("table");
-
       var thead = document.createElement("thead");
       var tbody = document.createElement("tbody");
 
@@ -38,13 +51,22 @@
       tableContainer.appendChild(table);
 
 
+    
+
       var listContainer = document.getElementById("list-container");
       var listTable = document.createElement("table");
-
+      var listThead = document.createElement("thead");
       var listTbody = document.createElement("tbody");
 
+      // ヘッダー行の作成
+      var listHeaderRow = document.createElement("tr");
+      var listHeaderCell1 = document.createElement("th");
+      listHeaderCell1.textContent = "　　リスト一覧　　";
+      listHeaderRow.appendChild(listHeaderCell1);
+      listThead.appendChild(listHeaderRow);
+
       // データ行の作成
-      for (var i = 1; i <= 20; i++) {
+      for (var i = 1; i <= 15; i++) {
         var listDataRow = document.createElement("tr");
         var listDataCell1 = document.createElement("td");
         listDataCell1.textContent = "リストデータ00" + i;
@@ -52,10 +74,11 @@
         listTbody.appendChild(listDataRow);
       }
 
+      listTable.appendChild(listThead);
       listTable.appendChild(listTbody);
 
       listContainer.appendChild(listTable);
-      listContainer.style.height = '700px'; // 表示する行数に応じて調整
+      listContainer.style.height = '655px'; // 表示する行数に応じて調整
       listContainer.style.overflowY = 'scroll';
     };
   </script>

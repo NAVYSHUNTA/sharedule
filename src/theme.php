@@ -51,6 +51,13 @@
       top: 380px;
       margin-right: 10px;
     }
+
+    .table th{
+      background: linear-gradient(to bottom ,#baf5c9, #FFFFFF);
+}
+    .table tr{
+  background: linear-gradient(to bottom right, #ecece6, #FFFFFF);
+}
   </style>
 </head>
 <body>
