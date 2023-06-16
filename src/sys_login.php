@@ -21,7 +21,7 @@
 </style>
 </head>
 <body>
-<?php
+    <?php
   session_start();
   if (isset($_SESSION['login_error'])) {
     echo '<p style="color: red;">' . $_SESSION['login_error'] . '</p>';
@@ -48,7 +48,7 @@
     </table>
     <div class="button-container">
         <input type="submit" value="登録">
-        <input type="login" value="ログイン">
+        <input type="submit" value="ログイン">
         <!--ボタンの機能はまだ触ってないです-->
     </div>
 </form>
