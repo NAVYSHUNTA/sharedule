@@ -135,22 +135,24 @@
     echo '<tr>';
     echo "<th> {$i}限 </th>";
 
-    while ($row = $result->fetch_assoc()) {
-        $subject_id = $row['subject_id'];
-        $subject = $row['subject'];
-        $day = $row['day'];
-        $period = $row['period'];
-        $classroom_number = $row['classroom_number'];
 
-        if ($period == $i) {
-            echo "<td onmouseover='showOptions(this)'>{$subject}</td>";
-        } else {
-            echo "<td></td>";
-        }
+    while ($row = $result->fetch_assoc()) {
+      $subject_id = $row['subject_id'];
+      $subject = $row['subject'];
+      $day = $row['day'];
+      $period = $row['period'];
+      $classroom_number = $row['classroom_number'];
+
+      if ($period == $i) {
+        echo "<td onmouseover='showOptions(this)'>{$subject}</td>";
+      } else {
+        echo "<td></td>";
+      }
     }
 
     $result->data_seek(0); // データの先頭に戻る
     echo '</tr>';
+  }
   ?>
 
   <div id="listContainer" class="list"></div>
@@ -256,27 +258,26 @@
     }
 
     function getListItems(subject) {
-        // 科目ごとに異なるオプションを設定する場合の処理を追加
-        var listItems = ["オプション1", "オプション2", "オプション3"];
-        return listItems;
+      // 科目ごとに異なるオプションを設定する場合の処理を追加
+      var listItems = ["オプション1", "オプション2", "オプション3"];
+      return listItems;
     }
 
     function showOptions(cell) {
-        var subject = cell.textContent;
-        var listItems = getListItems(subject);
-        var listHTML = "";
+      var subject = cell.textContent;
+      var listItems = getListItems(subject);
+      var listHTML = "";
 
-        for (var i = 0; i < listItems.length; i++) {
-            listHTML += '<label><input type="checkbox" name="subjectOption" value="' + listItems[i] + '"> ' + listItems[i] + '</label><br>';
-        }
+      for (var i = 0; i < listItems.length; i++) {
+        listHTML += '<label><input type="checkbox" name="subjectOption" value="' + listItems[i] + '"> ' + listItems[i] + '</label><br>';
+      }
 
-        var optionsContainer = document.getElementById("optionsContainer");
-        optionsContainer.innerHTML = listHTML;
-        optionsContainer.style.display = "block";
-        optionsContainer.style.left = (event.clientX + 1) + "px";
-        optionsContainer.style.top = (event.clientY - 10) + "px";
+      var optionsContainer = document.getElementById("optionsContainer");
+      optionsContainer.innerHTML = listHTML;
+      optionsContainer.style.display = "block";
+      optionsContainer.style.left = (event.clientX + 1) + "px";
+      optionsContainer.style.top = (event.clientY - 10) + "px";
     }
-
   </script>
   <div id="friend-container" class="friend-container"></div>
   <div class="form-container">
