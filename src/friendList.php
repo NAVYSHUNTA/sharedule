@@ -42,11 +42,13 @@
       headerRow.appendChild(headerCell1);
       thead.appendChild(headerRow);
 
+      var friend_request_array = ['九産 太郎', '九産 花子', ''];
+
       // データ行の作成
       for (var i = 1; i <= 20; i++) {
         var dataRow = document.createElement("tr");
         var dataCell1 = document.createElement("td");
-        dataCell1.textContent = "データ00" + i;
+        dataCell1.textContent = name_array[Math.min(i, name_array.length - 1)];
         dataCell1.style.fontSize = "23px"; // 文字のサイズを変更
         dataRow.appendChild(dataCell1);
         tbody.appendChild(dataRow);
