@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- CSS -->
-
   <link rel="stylesheet" href="./css/style.css">
   <style>
     body {
@@ -16,22 +15,18 @@
 
     th {
       font-size: 16px;
-      /* フォントサイズを変更 */
-      width 100px;
+      width: 100px;
       color: #f0ffff;
     }
 
     #myTable th {
       width: 100px;
-      /* セルの幅を100ピクセルに設定 */
       height: 50px;
-      /* セルの高さを50ピクセルに設定 */
       background-color: black;
       border: 1px solid white;
     }
 
     #myTable td {
-      /*GG*/
       position: relative;
       height: 75px;
       width: 150px;
@@ -49,13 +44,24 @@
       background-color: white;
       border: 1px solid #ccc;
     }
+
+    .subject-list-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 200px;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ccc;
+      height: 175px;
+      overflow-y: scroll;
+    }
   </style>
 
   <title>sharedule</title>
 </head>
 
 <body>
-  
   <table id="myTable">
     <tr>
       <th> </th>
@@ -113,106 +119,59 @@
     </tr>
   </table>
 
-  <div id="listContainer" class="list"></div>
+  <div id="subjectListContainer" class="subject-list-container"></div>
 
   <script>
-    window.onload = function() {
-      var tableContainer = document.getElementById("friend-container");
-      var table = document.createElement("table");
+    window.onload = function () {
+      var table = document.getElementById("myTable");
+      var cells = table.getElementsByTagName("td");
+      var subjectListContainer = document.getElementById("subjectListContainer");
 
-      var thead = document.createElement("thead");
-      var tbody = document.createElement("tbody");
+      for (var i = 0; i < cells.length; i++) {
+        cells[i].addEventListener("mouseover", function () {
+          var cell = this;
+          var listItems = getListItems(cell.textContent);
+          var listHTML = "";
 
-      // ヘッダー行の作成
-      var headerRow = document.createElement("tr");
-      var headerCell1 = document.createElement("th");
-      headerCell1.textContent = "　　友達一覧　　";
-      headerRow.appendChild(headerCell1);
-      thead.appendChild(headerRow);
+          for (var j = 0; j < listItems.length; j++) {
+            listHTML += '<label><input type="checkbox" name="subjectItem" value="' + listItems[j] + '">' + listItems[j] + '</label><br>';
+          }
 
-      // データ行の作成
-      for (var i = 1; i <= 20; i++) {
-        var dataRow = document.createElement("tr");
-        var dataCell1 = document.createElement("td");
-        dataCell1.textContent = "データ00" + i;
-        dataRow.appendChild(dataCell1);
-        tbody.appendChild(dataRow);
+          subjectListContainer.innerHTML = listHTML;
+          subjectListContainer.style.display = "block";
+          subjectListContainer.style.left = (event.clientX + 1) + "px";
+          subjectListContainer.style.top = (event.clientY - 10) + "px";
+
+          var checkboxInputs = subjectListContainer.querySelectorAll('input[type="checkbox"]');
+          for (var k = 0; k < checkboxInputs.length; k++) {
+            checkboxInputs[k].addEventListener("change", function () {
+              var subjectName = this.value;
+              var isChecked = this.checked;
+
+              if (isChecked) {
+                cell.innerHTML += '<div class="subject-check">' + subjectName + ' &#x2713;</div>';
+              } else {
+                var subjectChecks = cell.getElementsByClassName("subject-check");
+                for (var l = 0; l < subjectChecks.length; l++) {
+                  if (subjectChecks[l].textContent === subjectName + ' \u2713') {
+                    subjectChecks[l].parentNode.removeChild(subjectChecks[l]);
+                  }
+                }
+              }
+            });
+          }
+        });
+
+        cells[i].addEventListener("mouseout", function (event) {
+          var rect = table.getBoundingClientRect();
+          var mouseX = event.clientX;
+          var mouseY = event.clientY;
+
+          if (mouseX < rect.left - 10 || mouseX > rect.right - 10 || mouseY < rect.top - 10 || mouseY > rect.bottom - 10) {
+            subjectListContainer.style.display = "none";
+          }
+        });
       }
-
-      table.appendChild(thead);
-      table.appendChild(tbody);
-
-      tableContainer.appendChild(table);
-
-
-      var listContainer = document.getElementById("themelist-container");
-      var listTable = document.createElement("table");
-
-      var listTbody = document.createElement("tbody");
-
-      // データ行の作成
-      for (var i = 1; i <= 20; i++) {
-        var listDataRow = document.createElement("tr");
-        var listDataCell1 = document.createElement("td");
-        listDataCell1.textContent = "リストデータ00" + i;
-        listDataRow.appendChild(listDataCell1);
-        listTbody.appendChild(listDataRow);
-      }
-
-      listTable.appendChild(listTbody);
-
-      listContainer.appendChild(listTable);
-      listContainer.style.height = '175px'; // 表示する行数に応じて調整
-      listContainer.style.width = '54%';
-      listContainer.style.overflowY = 'scroll';
-    };
-    var table = document.getElementById("myTable");
-    var cells = table.getElementsByTagName("td");
-    var listContainer = document.getElementById("listContainer");
-
-    for (var i = 0; i < cells.length; i++) {
-      cells[i].addEventListener("mouseover", function() {
-        var cell = this;
-        var listItems = getListItems(cell.textContent);
-        var listHTML = "";
-
-        for (var j = 0; j < listItems.length; j++) {
-          listHTML += '<label><input type="radio" name="listItem" value="' + listItems[j] + '">' + listItems[j] + '</label><br>';
-        }
-
-        listContainer.innerHTML = listHTML;
-        listContainer.style.display = "block";
-        listContainer.style.left = (event.clientX + 1) + "px";
-        listContainer.style.top = (event.clientY - 10) + "px";
-
-        var radioInputs = listContainer.querySelectorAll('input[type="radio"]');
-        for (var k = 0; k < radioInputs.length; k++) {
-          radioInputs[k].addEventListener("change", function() {
-            cell.textContent = this.value;
-            listContainer.style.display = "none";
-          });
-        }
-      });
-
-      cells[i].addEventListener("mouseout", function(event) {
-        var rect = table.getBoundingClientRect();
-        var mouseX = event.clientX;
-        var mouseY = event.clientY;
-
-        if (mouseX < rect.left - 10 || mouseX > rect.right - 10 || mouseY < rect.top - 10 || mouseY > rect.bottom - 10) {
-          listContainer.style.display = "none";
-        }
-      });
-
-      cells[i].addEventListener("mouseout", function(event) {
-        var rect = table.getBoundingClientRect();
-        var mouseX = event.clientX;
-        var mouseY = event.clientY;
-
-        if (mouseX < rect.left - 10 || mouseX > rect.right - 10 || mouseY < rect.top - 10 || mouseY > rect.bottom - 10) {
-          listContainer.style.display = "none";
-        }
-      });
     }
 
     function getListItems(cellText) {
@@ -231,7 +190,18 @@
       return listItems;
     }
   </script>
-  <div id="friend-container" class="friend-container"></div>
+
+  <style>
+    .subject-check {
+      display: inline-block;
+      margin-top: 5px;
+      padding: 3px 6px;
+      background-color: #e0ffff;
+      border-radius: 4px;
+    }
+  </style>
+
+  <div id="friendContainer" class="friend-container"></div>
   <div class="form-container">
     <h2>授業科目登録フォーム</h2>
     <form method="post" action="?do=regist_subject">
@@ -251,7 +221,7 @@
     </form>
   </div>
 
-  <div id="themelist-container" class="themelist-container"></div>
+  <div id="themeListContainer" class="theme-list-container"></div>
 </body>
 
 </html>
