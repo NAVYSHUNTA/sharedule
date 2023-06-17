@@ -62,16 +62,16 @@
         </tr>
         <tr>
             <td class="input-container">ユーザ名：</td>
-            <td><input type="text" name="user_name" placeholder="ユーザ名" placeholder="ログイン時は不要" style="width: 200px; height: 25px;"></td>
+            <td><input type="text" name="user_name" placeholder="ログイン時は不要" style="width: 200px; height: 25px;"></td>
         </tr>
         <tr>
             <td class="input-container">パスワード：</td>
-            <td><input type="password" name="password"  placeholder="パスワード" style="width:200px; height: 30px;"></td>
+            <td><input type="password" name="pass"  placeholder="パスワード" style="width:200px; height: 30px;"></td>
         </tr>
     </table>
     <div class="button-container">
-        <input type="submit" value="register" class="custom-button">
-        <input type="submit" value="login"class="custom-button2">
+        <input type="submit" name="btn" value="register" class="custom-button">
+        <input type="submit" name="btn" value="login"class="custom-button2">
         <!--ボタンの機能はまだ触ってないです-->
     </div>
 </form>
