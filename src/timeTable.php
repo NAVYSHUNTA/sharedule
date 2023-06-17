@@ -39,6 +39,16 @@
       top: 0px;
       background: linear-gradient(to bottom right, #f0ffff, #FFFFFF);
     }
+
+    .form-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 300px;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ccc;
+    }
   </style>
 
   <title>sharedule</title>
@@ -101,23 +111,6 @@
       <td>Sat-5</td>
     </tr>
   </table>
-
-  <h2>授業科目登録フォーム</h2>
-  <form method="post" action="?do=regist_subject">
-    <label for="subject">科目名:</label>
-    <input type="text" name="subject" id="subject" required><br><br>
-
-    <label for="day">曜日:</label>
-    <input type="text" name="day" id="day" maxlength="1" required><br><br>
-
-    <label for="period">時限:</label>
-    <input type="number" name="period" id="period" required><br><br>
-
-    <label for="classroom_number">教室番号:</label>
-    <input type="number" name="classroom_number" id="classroom_number" required><br><br>
-
-    <input type="submit" value="登録">
-  </form>
 
   <div id="listContainer" class="list"></div>
 
@@ -238,6 +231,25 @@
     }
   </script>
   <div id="friend-container" class="friend-container"></div>
+  <div class="form-container">
+    <h2>授業科目登録フォーム</h2>
+    <form method="post" action="?do=regist_subject">
+      <label for="subject">科目名:</label>
+      <input type="text" name="subject" id="subject" required><br><br>
+
+      <label for="day">曜日:</label>
+      <input type="text" name="day" id="day" maxlength="1" required><br><br>
+
+      <label for="period">時限:</label>
+      <input type="number" name="period" id="period" required><br><br>
+
+      <label for="classroom_number">教室番号:</label>
+      <input type="number" name="classroom_number" id="classroom_number" required><br><br>
+
+      <input type="submit" value="登録">
+    </form>
+  </div>
+
   <div id="themelist-container" class="themelist-container"></div>
 </body>
 
