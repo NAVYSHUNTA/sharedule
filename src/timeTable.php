@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
+  <!-- CSS -->
 
-    <link rel="stylesheet" href="./css/style.css">
-    <style>
-      body{
-        background-color: #b0c4de;
-      }
-  th {
-    font-size: 16px; /* フォントサイズを変更 */
-    width 100px;
-    color:#f0ffff;
-  }
-  #myTable th {
-    width: 100px; /* セルの幅を100ピクセルに設定 */
-    height: 50px; /* セルの高さを50ピクセルに設定 */
-    background-color:black;
-    border: 1px solid white;
-  }
-  #myTable td {/*GG*/
-    position: relative;
-    height: 75px;
-    width :150px;
-    border: 1px solid black;
-    top:0px;
-    background: linear-gradient(to bottom right, #f0ffff, #FFFFFF);
-  }
-</style>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    body {
+      background-color: #b0c4de;
+    }
 
-    <title>sharedule</title>
+    th {
+      font-size: 16px;
+      /* フォントサイズを変更 */
+      width 100px;
+      color: #f0ffff;
+    }
+
+    #myTable th {
+      width: 100px;
+      /* セルの幅を100ピクセルに設定 */
+      height: 50px;
+      /* セルの高さを50ピクセルに設定 */
+      background-color: black;
+      border: 1px solid white;
+    }
+
+    #myTable td {
+      /*GG*/
+      position: relative;
+      height: 75px;
+      width: 150px;
+      border: 1px solid black;
+      top: 0px;
+      background: linear-gradient(to bottom right, #f0ffff, #FFFFFF);
+    }
+
+    .form-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 300px;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+  <title>sharedule</title>
 </head>
+
 <body>
+  
   <table id="myTable">
     <tr>
-      <th>   </th>
+      <th> </th>
       <th>Mon</th>
       <th>Tue</th>
       <th>Wen</th>
@@ -96,8 +116,7 @@
   <div id="listContainer" class="list"></div>
 
   <script>
-
-window.onload = function() {
+    window.onload = function() {
       var tableContainer = document.getElementById("friend-container");
       var table = document.createElement("table");
 
@@ -163,8 +182,8 @@ window.onload = function() {
 
         listContainer.innerHTML = listHTML;
         listContainer.style.display = "block";
-        listContainer.style.left = (event.clientX +1) + "px";
-        listContainer.style.top = (event.clientY -10) + "px";
+        listContainer.style.left = (event.clientX + 1) + "px";
+        listContainer.style.top = (event.clientY - 10) + "px";
 
         var radioInputs = listContainer.querySelectorAll('input[type="radio"]');
         for (var k = 0; k < radioInputs.length; k++) {
@@ -180,7 +199,7 @@ window.onload = function() {
         var mouseX = event.clientX;
         var mouseY = event.clientY;
 
-        if (mouseX < rect.left -10 || mouseX > rect.right -10 || mouseY < rect.top -10 || mouseY > rect.bottom -10) {
+        if (mouseX < rect.left - 10 || mouseX > rect.right - 10 || mouseY < rect.top - 10 || mouseY > rect.bottom - 10) {
           listContainer.style.display = "none";
         }
       });
@@ -190,7 +209,7 @@ window.onload = function() {
         var mouseX = event.clientX;
         var mouseY = event.clientY;
 
-        if (mouseX < rect.left -10 || mouseX > rect.right -10 || mouseY < rect.top -10 || mouseY > rect.bottom -10) {
+        if (mouseX < rect.left - 10 || mouseX > rect.right - 10 || mouseY < rect.top - 10 || mouseY > rect.bottom - 10) {
           listContainer.style.display = "none";
         }
       });
@@ -211,10 +230,28 @@ window.onload = function() {
 
       return listItems;
     }
-
-    
   </script>
   <div id="friend-container" class="friend-container"></div>
+  <div class="form-container">
+    <h2>授業科目登録フォーム</h2>
+    <form method="post" action="?do=regist_subject">
+      <label for="subject">科目名:</label>
+      <input type="text" name="subject" id="subject" required><br><br>
+
+      <label for="day">曜日:</label>
+      <input type="text" name="day" id="day" maxlength="1" required><br><br>
+
+      <label for="period">時限:</label>
+      <input type="number" name="period" id="period" required><br><br>
+
+      <label for="classroom_number">教室番号:</label>
+      <input type="number" name="classroom_number" id="classroom_number" required><br><br>
+
+      <input type="submit" value="登録">
+    </form>
+  </div>
+
   <div id="themelist-container" class="themelist-container"></div>
 </body>
+
 </html>

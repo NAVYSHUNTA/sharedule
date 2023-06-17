@@ -114,6 +114,22 @@ img {
   right: 0px;
 }
 
+.table-container th {
+  border: 5px solid black;
+  background: linear-gradient(to bottom right,#E6F1FF, #FFFFFF);
+  position: sticky;
+  top: 0;
+}
+
+.table-container tr{
+  border: 5px solid black;
+}
+
+.table-container table {
+  position: relative;
+}
+
+
 .friend-container {
   height: 500px;
   width: 37%;
@@ -121,6 +137,13 @@ img {
   position: absolute;
   bottom: 0px;
   right: 0px;
+}
+
+.list-container th {
+  border: 5px solid black;
+  background: linear-gradient(to bottom right,#E6F1FF, #FFFFFF);
+  position: sticky;
+  top: 0;
 }
 
 table {
@@ -134,7 +157,7 @@ text-box{
 }
 
 th, td {
-  border: 10px solid black;
+  border: 5px solid black;
   width: 900px;
   height: 100px;
   padding: 8px;
