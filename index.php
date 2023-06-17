@@ -31,6 +31,8 @@ if (isset($_GET['do'])) {//index.php?do=に続くパラメータで実行する�
   }
 }
 
-include('src/pg_header.php'); //ヘッダー部分を読み込む
-include('src/' . $action . '.php'); //指定されたファイルを読み込む
+if ($action != "sys_logout" && $action != "sys_login"){
+  include('src/pg_header.php'); //ヘッダー部分を読み込む
+}
+include('src/' . $action . '.php'); //指定されたファイルを読み込む  
 ?>
