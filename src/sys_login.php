@@ -60,24 +60,28 @@
                 <td colspan="2">
                     <div class="image-container">
                         <img src="./images/logo.png">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="input-container">ユーザ名：</td>
-                <td><input type="text" name="uid"></td>
-            </tr>
-            <tr>
-                <td class="input-container">パスワード：</td>
-                <td><input type="password" name="pass"></td>
-            </tr>
-        </table>
-        <div class="button-container">
-            <input type="submit" value="register">
-            <input type="submit" value="login">
-            <!--ボタンの機能はまだ触ってないです-->
-        </div>
-    </form>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="input-container">ユーザID：</td>
+            <td><input type="text" name="uid" placeholder="ユーザID" style="width: 300px; height: 40px;"></td>
+        </tr>
+        <tr>
+            <td class="input-container">ユーザ名：</td>
+            <td><input type="text" name="user_name" placeholder="ログイン時は不要" style="width: 300px; height: 40px;"></td>
+        </tr>
+        <tr>
+            <td class="input-container">パスワード：</td>
+            <td><input type="password" name="pass"  placeholder="パスワード" style="width:300px; height: 40px;"></td>
+        </tr>
+    </table>
+    <div class="button-container">
+        <button type="submit" name="btn" value="register" class="custom-button">登録</button>
+        <button type="submit" name="btn" value="login"class="custom-button2">ログイン</button>
+        <!--ボタンの機能はまだ触ってないです-->
+    </div>
+</form>
 </body>
 
 </html>
