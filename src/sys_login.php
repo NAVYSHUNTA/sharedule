@@ -58,7 +58,7 @@
         </tr>
         <tr>
             <td class="input-container">ユーザID：</td>
-            <td><input type="text" name="uid" placeholder="ユーザ名" style="width: 200px; height: 25px;"></td>
+            <td><input type="text" name="uid" placeholder="ユーザID" style="width: 200px; height: 25px;"></td>
         </tr>
         <tr>
             <td class="input-container">ユーザ名：</td>
