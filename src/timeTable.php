@@ -115,6 +115,7 @@
   -->
 
   <?php
+  require_once('db_inc.php'); //データベースが必要なので読み込ませる
   // データベースから科目の情報を取得
   $sql = "SELECT subject_id, subject, day, period, classroom_number FROM timetable";
   $result = $conn->query($sql);
