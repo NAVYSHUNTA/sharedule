@@ -11,6 +11,9 @@
 
     <title>sharedule</title>
     <style>
+        body{
+            background-color: #b0c4de;
+        }
         h2 {
             font-size: 20px;
         }

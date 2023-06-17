@@ -24,6 +24,9 @@
     <a href="sys_login.php" class="btn btn-flat"><span>ログアウト</span></a>
   </div>
   <style>
+    body{
+      background-color: #b0c4de;
+    }
     /* 枠線のスタイル */
     table {
       position: relative;
