@@ -70,8 +70,8 @@
         </tr>
     </table>
     <div class="button-container">
-        <input type="submit" value="登録" class="custom-button">
-        <input type="submit" value="ログイン"class="custom-button2">
+        <input type="submit" value="register" class="custom-button">
+        <input type="submit" value="login"class="custom-button2">
         <!--ボタンの機能はまだ触ってないです-->
     </div>
 </form>
