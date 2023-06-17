@@ -9,7 +9,7 @@
     if (!$rs) die('エラー: ' . $conn->error);
     $row= $rs->fetch_assoc();
     if ($row){ //Login succeeded
-      $_SESSION['uid']   = $row['uid'];
+      $_SESSION['uid']   = $u;
       $_SESSION['uname'] = $row['user_name'];
       $_SESSION['max_notification'] = $row['max_notification'];
       $_SESSION['alert_days_before'] = $row['alert_days_before'];
