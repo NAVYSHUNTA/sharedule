@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>sharedule</title>
 </head>
@@ -20,7 +20,9 @@
     <a href="theme.php" class="btn btn-flat"><span>課題</span></a>
     <a href="friendList.php" class="btn btn-flat"><span>フレンドリスト</span></a>
     <a href="setting.php" class="btn btn-flat"><span>設定</span></a>
-    <a class="btn btn-flat"><span>福岡　太郎</span></a>
+    <?php
+      echo "<a class=\"btn btn-flat\"><span>{$_SESSION['uname']}</span></a>";
+    ?>
     <a href="sys_login.php" class="btn btn-flat"><span>ログアウト</span></a>
     <h1>時間割（初期画面）</h1>
   </div>
