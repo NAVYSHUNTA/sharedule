@@ -70,13 +70,13 @@
   <table id="table1" class="table">
     <tbody>
       <tr>
+        <th>6/12</th>
+        <th>6/13</th>
+        <th>6/14</th>
         <th>6/15</th>
         <th>6/16</th>
         <th>6/17</th>
         <th>6/18</th>
-        <th>6/19</th>
-        <th>6/20</th>
-        <th>6/21</th>
       </tr>
       <tr>
         <td>課題</td>
@@ -93,13 +93,13 @@
   <table id="table2" class="table" style="display: none;">
   <tbody>
       <tr>
+        <th>6/19</th>
+        <th>6/20</th>
+        <th>6/21</th>
         <th>6/22</th>
         <th>6/23</th>
         <th>6/24</th>
         <th>6/25</th>
-        <th>6/26</th>
-        <th>6/27</th>
-        <th>6/28</th>
       </tr>
       <tr>
         <td>課題</td>
@@ -116,13 +116,13 @@
   <table id="table3" class="table" style="display: none;">
   <tbody>
       <tr>
-        <th>6/29</th>
+        <th>6/26</th>
+        <th>6/27</th>
+        <th>6/28/th>
+        <th>6/29/th>
         <th>6/30</th>
         <th>7/1</th>
         <th>7/2</th>
-        <th>7/3</th>
-        <th>7/4</th>
-        <th>7/5</th>
       </tr>
       <tr>
         <td>課題</td>
@@ -139,13 +139,13 @@
   <table id="table4" class="table" style="display: none;">
   <tbody>
       <tr>
+        <th>7/3</th>
+        <th>7/4</th>
+        <th>7/5</th>
         <th>7/6</th>
         <th>7/7</th>
         <th>7/8</th>
         <th>7/9</th>
-        <th>7/10</th>
-        <th>7/11</th>
-        <th>7/12</th>
       </tr>
       <tr>
         <td>課題</td>
