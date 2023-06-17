@@ -42,14 +42,32 @@
       headerRow.appendChild(headerCell1);
       thead.appendChild(headerRow);
 
-      var friend_request_array = ['九産 太郎', '九産 花子', ''];
+      var friend_request_array = ['九産 太郎', '九産 花子', '田中 太郎','小林 森田',''];
 
       // データ行の作成
       for (var i = 0; i < 20; i++) {
         var dataRow = document.createElement("tr");
         var dataCell1 = document.createElement("td");
-        dataCell1.textContent = friend_request_array[Math.min(i, friend_request_array.length - 1)];
-        dataCell1.style.fontSize = "23px"; // 文字のサイズを変更
+        var dataCell1text = document.createElement("span");
+        var dataCell2text = document.createElement("span");
+        dataCell1text.textContent = friend_request_array[Math.min(i, friend_request_array.length - 1)]; 
+        dataCell1text.style.fontSize = "23px"; // 文字のサイズを変更
+        dataCell1.appendChild(dataCell1text);
+        var dataCell1button1 = document.createElement("span");
+        var dataCell1button2 = document.createElement("span");
+        dataCell1button1.textContent = "許可"; 
+        dataCell1button1.style.fontSize = "23px"; // 文字のサイズを変更
+        dataCell1button1.style.border= "1px solid"
+        dataCell1button1.style.marginLeft = "10px";
+        dataCell1button1.style.padding = "3px";
+        dataCell1button2.textContent = "拒否"; 
+        dataCell1button2.style.fontSize = "23px"; // 文字のサイズを変更
+        dataCell1button2.style.border= "1px solid"
+        dataCell1button2.style.marginLeft = "10px";
+        dataCell1button2.style.padding = "3px";
+
+        dataCell1.appendChild(dataCell1button1);
+        dataCell1.appendChild(dataCell1button2);
         dataRow.appendChild(dataCell1);
         tbody.appendChild(dataRow);
       }
@@ -82,6 +100,7 @@
         var listDataRow = document.createElement("tr");
         var listDataCell1 = document.createElement("td");
         listDataCell1.textContent = friend_list_array[Math.min(i, friend_list_array.length - 1)];
+
         listDataCell1.style.fontSize = "23px"; // 文字のサイズを変更
         listDataRow.appendChild(listDataCell1);
         listTbody.appendChild(listDataRow);
