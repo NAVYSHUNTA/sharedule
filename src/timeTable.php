@@ -16,16 +16,17 @@
   <div class="navbar">
     <!--#にリンクを挿入-->
     <!--画像が挿入されているところは、ホームに遷移するためのボタンです-->
-    <a href="timeTable.php" style="width: 80px; height: 30px;"><img src="../images/logo.png" alt="メニュー1" /></a>
-    <a href="theme.php" class="btn btn-flat"><span>課題</span></a>
-    <a href="friendList.php" class="btn btn-flat"><span>フレンドリスト</span></a>
-    <a href="setting.php" class="btn btn-flat"><span>設定</span></a>
     <?php
+      echo '<a href="?do=timeTable" style="width: 80px; height: 30px;"><img src="./images/logo.png" alt="メニュー1" /></a>';
+      echo '<a href="?do=theme" class="btn btn-flat"><span>課題</span></a>';
+      echo '<a href="?do=friendList" class="btn btn-flat"><span>フレンドリスト</span></a>';
+      echo '<a href="?do=setting" class="btn btn-flat"><span>設定</span></a>';
       echo "<a class=\"btn btn-flat\"><span>{$_SESSION['uname']}</span></a>";
+      echo '<a href="?do=sys_login" class="btn btn-flat"><span>ログアウト</span></a>';
     ?>
-    <a href="sys_login.php" class="btn btn-flat"><span>ログアウト</span></a>
-    <h1>時間割（初期画面）</h1>
+    <h1>時間割</h1>
   </div>
+  
   <table id="myTable">
     <tr>
       <th>   </th>
