@@ -6,7 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+  th {
+    font-size: 16px; /* フォントサイズを変更 */
+    width 100px;
+    color:#f0ffff;
+  }
+  #myTable th {
+    width: 100px; /* セルの幅を100ピクセルに設定 */
+    height: 50px; /* セルの高さを50ピクセルに設定 */
+    background-color:black;
+    border: 1px solid white;
+  }
+  #myTable td {/*GG*/
+    position: relative;
+    height: 75px;
+    width :150px;
+    border: 1px solid black;
+    top:0px;
+    background: linear-gradient(to bottom right, #f0ffff, #FFFFFF);
+  }
+</style>
 
     <title>sharedule</title>
 </head>
@@ -16,17 +38,16 @@
   <div class="navbar">
     <!--#にリンクを挿入-->
     <!--画像が挿入されているところは、ホームに遷移するためのボタンです-->
+    <a href="timeTable.php" style="width: 80px; height: 30px;"><img src="../images/logo.png" alt="メニュー1" /></a>
+    <a href="theme.php" class="btn btn-flat"><span>課題</span></a>
+    <a href="friendList.php" class="btn btn-flat"><span>フレンドリスト</span></a>
+    <a href="setting.php" class="btn btn-flat"><span>設定</span></a>
     <?php
-      echo '<a href="?do=timeTable" style="width: 80px; height: 30px;"><img src="./images/logo.png" alt="メニュー1" /></a>';
-      echo '<a href="?do=theme" class="btn btn-flat"><span>課題</span></a>';
-      echo '<a href="?do=friendList" class="btn btn-flat"><span>フレンドリスト</span></a>';
-      echo '<a href="?do=setting" class="btn btn-flat"><span>設定</span></a>';
       echo "<a class=\"btn btn-flat\"><span>{$_SESSION['uname']}</span></a>";
-      echo '<a href="?do=sys_login" class="btn btn-flat"><span>ログアウト</span></a>';
     ?>
-    <h1>時間割</h1>
+    <a href="sys_login.php" class="btn btn-flat"><span>ログアウト</span></a>
+    <h1>時間割（初期画面）</h1>
   </div>
-  
   <table id="myTable">
     <tr>
       <th>   </th>

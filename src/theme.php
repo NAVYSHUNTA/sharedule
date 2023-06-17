@@ -50,10 +50,12 @@
       left:40%;
       top: 380px;
       margin-right: 10px;
+      color:lightstellblue;
     }
 
     .table th{
-      background: linear-gradient(to bottom ,#baf5c9, #FFFFFF);
+      background-color:lightslategray;
+      color:white;
 }
     .table tr{
   background: linear-gradient(to bottom right, #ecece6, #FFFFFF);
