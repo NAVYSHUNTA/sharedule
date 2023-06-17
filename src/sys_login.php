@@ -52,13 +52,17 @@
             <tr>
                 <td colspan="2">
                     <div class="image-container">
-                        <img src="../images/logo.png">
+                        <img src="./images/logo.png">
                 </div>
             </td>
         </tr>
         <tr>
+            <td class="input-container">ユーザID：</td>
+            <td><input type="text" name="uid" placeholder="ユーザ名" style="width: 200px; height: 25px;"></td>
+        </tr>
+        <tr>
             <td class="input-container">ユーザ名：</td>
-            <td><input type="text" name="username" placeholder="ユーザ名" style="width: 200px; height: 25px;"></td>
+            <td><input type="text" name="user_name" placeholder="ユーザ名" placeholder="ログイン時は不要" style="width: 200px; height: 25px;"></td>
         </tr>
         <tr>
             <td class="input-container">パスワード：</td>
