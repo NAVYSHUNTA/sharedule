@@ -15,6 +15,7 @@ if ($_SESSION['uid']) {
 foreach($_SESSION as $value){
  echo $value;
  echo "\n";
+}
 
 include('src/' . $action . '.php'); //指定されたファイルを読み込む
 ?>
