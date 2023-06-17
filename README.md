@@ -5,13 +5,14 @@
 ## 作品名
 **sharedule(シェアジュール)**
 
-share × schedule
-
-## 背景
-
-## デモ動画
+## 背景<br>
+ハッカソンの会議や開発の日時を決めようとしたときに感じたこと
+- 意外と手間がかかる
+- チームの人数が増えるとより大変
+<br>&rarr; 時間割を共有するツールを作ろう！！
 
 ## プレゼン資料
+https://github.com/NAVYSHUNTA/sharedule/blob/main/slide_sharedule.pdf
 
 ## 開発体制
 <table>
@@ -28,19 +29,19 @@ share × schedule
   <tr>
     <th>担当</th>
     <td>
-      <a href="https://github.com/NAVYSHUNTA">@Shunta Nakamura</a>：バックエンド<br>
-      <a href="https://github.com/nekoy3">@nekoy3</a>：バックエンド<br>
-      <a href="https://github.com/k21rs085">@Yuto TSUMAGARI</a>：フロントエンド<br>
-      <a href="https://github.com/k21rs089">@nakagaki itsuki k21rs089</a>：フロントエンド<br>
+      <a href="https://github.com/NAVYSHUNTA">@Shunta Nakamura</a>：バックエンド、デバッガー、スライド作成<br>
+      <a href="https://github.com/nekoy3">@nekoy3</a>：バックエンド、デバッガー、サーバー管理<br>
+      <a href="https://github.com/k21rs085">@Yuto TSUMAGARI</a>：フロントエンド、プレゼン発表<br>
+      <a href="https://github.com/k21rs089">@nakagaki itsuki k21rs089</a>：フロントエンド、プレゼン発表<br>
     </td>
   </tr>
   <tr>
     <th>開発期間</th>
-    <td>1週間</td>
+    <td>1週間(2023/06/11～2023/06/17)</td>
   </tr>
   <tr>
     <th>主要技術</th>
-    <td>フロントエンド：<br>
-        バックエンド：<br>
+    <td>フロントエンド：HTML、CSS、JavaScript、PHP<br>
+        バックエンド：GitHub、Apache(自宅サーバー)<br>
   </tr>
 </table>
