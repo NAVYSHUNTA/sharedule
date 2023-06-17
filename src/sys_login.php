@@ -16,10 +16,34 @@
             text-align: center;
         }
 
-        .button-container {
-            text-align: center;
+    .button-container {
+        text-align: center;
+        margin-top: 40px; /* ボタンの上部マージンを追加 */
+    }
+
+    .custom-button {
+        background-color:#000a09 ;
+        color: #ffffff;
+        font-size: 24px; /* ボタンの文字サイズを変更 */
+        padding: 10px 20px; /* ボタンのパディングを調整 */
+        border-radius: 7px; /* ボタンの角丸を設定 */
+    }
+    .custom-button2{
+        background-color: #000a09;
+        color: #ffffff;
+        font-size: 24px; /* ボタンの文字サイズを変更 */
+        padding: 10px 8px; /* ボタンのパディングを調整 */
+        border-radius: 7px; /* ボタンの角丸を設定 */  
+
+    }
+
+    input[type="text"]::placeholder,
+        input[type="password"]::placeholder {
+            font-size: 30px;
         }
-    </style>
+
+
+</style>
 </head>
 
 <body>
@@ -31,6 +55,7 @@
     ?>
     <form action="?do=sys_check" method="post">
         <table>
+            
             <tr>
                 <td colspan="2">
                     <div class="image-container">
