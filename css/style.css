@@ -199,3 +199,8 @@ th, td {
   background-color:#e6f7e6;
 }
 
+input[type="submit"] {
+  position: absolute;
+  right: 550px;
+  margin-top: 60px;
+}
