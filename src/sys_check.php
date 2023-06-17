@@ -1,9 +1,9 @@
 <?php
   require_once('db_inc.php'); //データベースが必要なので読み込ませる
-  $type = $_POST['submit']; //'登録' or 'ログイン'
+  $type = $_POST['btn']; //'register' or 'login'
   $u = $_POST['uid'] ;  //ユーザ名
   $p = $_POST['pass'];  //パスワード
-  if ($type == 'ログイン'){
+  if ($type == 'login'){
     $sql = "SELECT * FROM user WHERE uid= '{$u}'  AND user_password='{$p}'";
     $rs = $conn->query($sql);
     if (!$rs) die('エラー: ' . $conn->error);
