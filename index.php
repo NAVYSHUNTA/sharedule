@@ -9,12 +9,7 @@ if (isset($_GET['do'])) {//index.php?do=に続くパラメータで実行する�
 }
 
 if ($_SESSION['uid']) {
-  $action = 'timetable';
-}
-
-foreach($_SESSION as $value){
- echo $value;
- echo "\n";
+  $action = 'timeTable';
 }
 
 include('src/' . $action . '.php'); //指定されたファイルを読み込む
