@@ -50,7 +50,6 @@
 <body>
     <form action="?do=goodbye" method="post">
         <table>
-
             <tr>
                 <td colspan="2">
                     <div class="image-container">
