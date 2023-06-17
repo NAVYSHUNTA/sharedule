@@ -50,7 +50,7 @@
     if (isset($_POST['bye'])) {
         $_SESSION['uid']   = "";
         $_SESSION['uname'] = "";
-        header("Location: ?do=sys_login");
+        header('Location:?do=sys_login');
     }
     ?>
 
