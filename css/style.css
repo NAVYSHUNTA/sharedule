@@ -134,7 +134,7 @@ text-box{
 }
 
 th, td {
-  border: 1px solid black;
+  border: 10px solid black;
   width: 900px;
   height: 100px;
   padding: 8px;
@@ -172,13 +172,9 @@ th, td {
     top:300px;
   }
 
-  #myTable td {
-    position: relative;
-    height: 75px;
-    width :150px;
-    border: 1px solid black;
-    top:0px;
-  }
+  
+
+  
 
 /*setting画面用*/
 
@@ -199,3 +195,6 @@ th, td {
 }
 
 
+.table th{
+  background-color:#e6f7e6;
+}

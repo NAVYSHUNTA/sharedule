@@ -6,7 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+  th {
+    font-size: 16px; /* フォントサイズを変更 */
+    width 100px;
+    color:#f0ffff;
+  }
+  #myTable th {
+    width: 100px; /* セルの幅を100ピクセルに設定 */
+    height: 50px; /* セルの高さを50ピクセルに設定 */
+    background-color:black;
+    border: 1px solid white;
+  }
+  #myTable td {
+    position: relative;
+    height: 75px;
+    width :150px;
+    border: 1px solid black;
+    top:0px;
+    background: linear-gradient(to bottom right, #f0ffff, #FFFFFF);
+  }
+</style>
 
     <title>sharedule</title>
 </head>
@@ -28,16 +50,16 @@
   </div>
   <table id="myTable">
     <tr>
-      <td>   </td>
-      <td>Mon</td>
-      <td>Tue</td>
-      <td>Wen</td>
-      <td>Thu</td>
-      <td>Fri</td>
-      <td>Sat</td>
+      <th>   </th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wen</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
     </tr>
     <tr>
-      <td>一限</td>
+      <th>一限</th>
       <td>Mon-1</td>
       <td>Tue-1</td>
       <td>Wen-1</td>
@@ -46,7 +68,7 @@
       <td>Sat-1</td>
     </tr>
     <tr>
-      <td>二限</td>
+      <th>二限</th>
       <td>Mon-2</td>
       <td>Tue-2</td>
       <td>Wen-2</td>
@@ -55,7 +77,7 @@
       <td>Sat-2</td>
     </tr>
     <tr>
-      <td>三限</td>
+      <th>三限</th>
       <td>Mon-3</td>
       <td>Tue-3</td>
       <td>Wen-3</td>
@@ -64,7 +86,7 @@
       <td>Sat-3</td>
     </tr>
     <tr>
-      <td>四限</td>
+      <th>四限</th>
       <td>Mon-4</td>
       <td>Tue-4</td>
       <td>Wen-4</td>
@@ -73,7 +95,7 @@
       <td>Sat-4</td>
     </tr>
     <tr>
-      <td>五限</td>
+      <th>五限</th>
       <td>Mon-5</td>
       <td>Tue-5</td>
       <td>Wen-5</td>
