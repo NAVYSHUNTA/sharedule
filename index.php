@@ -6,7 +6,8 @@ session_start();
 $action = 'sys_login'; //ホームページ (eps_home)をデフォルト機能とする
 
 if ($_SESSION['uid']) {
-  $action = 'timeTable';
+  include('src/pg_header.php'); //ヘッダー部分を読み込む
+  $action = 'timeTable'; //セッションが存在すれば初期ページをtimeTable.phpとする
 }
 
 if (isset($_GET['do'])) {//index.php?do=に続くパラメータで実行する機能を指定
