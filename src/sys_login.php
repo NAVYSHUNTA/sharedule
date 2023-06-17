@@ -37,6 +37,12 @@
 
     }
 
+    input[type="text"]::placeholder,
+        input[type="password"]::placeholder {
+            font-size: 30px;
+        }
+
+
 </style>
 </head>
 
@@ -49,6 +55,7 @@
 ?>
     <form action="?do=sys_check" method="post">
         <table>
+            
             <tr>
                 <td colspan="2">
                     <div class="image-container">
@@ -58,15 +65,15 @@
         </tr>
         <tr>
             <td class="input-container">ユーザID：</td>
-            <td><input type="text" name="uid" placeholder="ユーザID" style="width: 200px; height: 25px;"></td>
+            <td><input type="text" name="uid" placeholder="ユーザID" style="width: 300px; height: 40px;"></td>
         </tr>
         <tr>
             <td class="input-container">ユーザ名：</td>
-            <td><input type="text" name="user_name" placeholder="ログイン時は不要" style="width: 200px; height: 25px;"></td>
+            <td><input type="text" name="user_name" placeholder="ログイン時は不要" style="width: 300px; height: 40px;"></td>
         </tr>
         <tr>
             <td class="input-container">パスワード：</td>
-            <td><input type="password" name="pass"  placeholder="パスワード" style="width:200px; height: 30px;"></td>
+            <td><input type="password" name="pass"  placeholder="パスワード" style="width:300px; height: 40px;"></td>
         </tr>
     </table>
     <div class="button-container">
