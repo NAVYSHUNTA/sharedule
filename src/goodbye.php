@@ -36,9 +36,15 @@
 </head>
 
 <body>
-    <div class="image-container">
-        <img src="./images/logo.png">
-    </div>
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="image-container">
+                    <img src="./images/logo.png">
+                </div>
+            </td>
+        </tr>
+    </table>
 
     <?php
     if (isset($_POST['bye'])) {
