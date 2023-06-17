@@ -37,7 +37,8 @@
       // ヘッダー行の作成
       var headerRow = document.createElement("tr");
       var headerCell1 = document.createElement("th");
-      headerCell1.textContent = "　　友達一覧　　";
+      headerCell1.textContent = "　　フレンドリクエスト　　";
+      headerCell1.style.fontSize = "30px"; // 文字のサイズを変更
       headerRow.appendChild(headerCell1);
       thead.appendChild(headerRow);
 
@@ -46,6 +47,7 @@
         var dataRow = document.createElement("tr");
         var dataCell1 = document.createElement("td");
         dataCell1.textContent = "データ00" + i;
+        dataCell1.style.fontSize = "23px"; // 文字のサイズを変更
         dataRow.appendChild(dataCell1);
         tbody.appendChild(dataRow);
       }
@@ -66,7 +68,8 @@
       // ヘッダー行の作成
       var listHeaderRow = document.createElement("tr");
       var listHeaderCell1 = document.createElement("th");
-      listHeaderCell1.textContent = "　　リスト一覧　　";
+      listHeaderCell1.textContent = "　　フレンドリスト　　";
+      listHeaderCell1.style.fontSize = "30px"; // 文字のサイズを変更
       listHeaderRow.appendChild(listHeaderCell1);
       listThead.appendChild(listHeaderRow);
 
@@ -75,6 +78,7 @@
         var listDataRow = document.createElement("tr");
         var listDataCell1 = document.createElement("td");
         listDataCell1.textContent = "リストデータ00" + i;
+        listDataCell1.style.fontSize = "23px"; // 文字のサイズを変更
         listDataRow.appendChild(listDataCell1);
         listTbody.appendChild(listDataRow);
       }
