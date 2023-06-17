@@ -12,7 +12,7 @@
     <title>sharedule</title>
     <style>
         h2 {
-            font-size: 25px;
+            font-size: 20px;
         }
 
         input[type="radio"] {
@@ -23,7 +23,7 @@
         }
 
         p {
-            font-size: 13px;
+            font-size: 20px;
         }
     </style>
 </head>
@@ -64,7 +64,7 @@
             </p>
             <h2>テキストサイズ</h2>
             <p>
-                &emsp;
+            
                 <input type="radio" name="font_size" value="15">15px&emsp;&emsp;
                 <input type="radio" name="font_size" value="16" checked>16px&emsp;&emsp;
                 <input type="radio" name="font_size" value="17">17px&emsp;&emsp;
