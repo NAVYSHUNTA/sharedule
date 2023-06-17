@@ -6,29 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-
-    <link rel="stylesheet" href="../css/style.css">
-    <style>
-  th {
-    font-size: 16px; /* フォントサイズを変更 */
-    width 100px;
-    color:#f0ffff;
-  }
-  #myTable th {
-    width: 100px; /* セルの幅を100ピクセルに設定 */
-    height: 50px; /* セルの高さを50ピクセルに設定 */
-    background-color:black;
-    border: 1px solid white;
-  }
-  #myTable td {
-    position: relative;
-    height: 75px;
-    width :150px;
-    border: 1px solid black;
-    top:0px;
-    background: linear-gradient(to bottom right, #f0ffff, #FFFFFF);
-  }
-</style>
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>sharedule</title>
 </head>
