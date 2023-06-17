@@ -11,6 +11,7 @@ if (isset($_GET['do'])) {//index.php?do=に続くパラメータで実行する�
 if ($_SESSION['uid']) {
   $action = 'timetable';
 }
+echo $_SESSION;
 
 include('src/' . $action . '.php'); //指定されたファイルを読み込む
 ?>
