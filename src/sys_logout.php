@@ -61,7 +61,9 @@
 
         <?php
         if (isset($_POST['logout'])) {
-            header("Location: ?do=goodbye");
+            $_SESSION['uid']   = "";
+            $_SESSION['uname'] = "";
+            header("Location: ?do=sys_login");
         }
         ?>
 
