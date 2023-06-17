@@ -33,21 +33,10 @@
     <title>sharedule</title>
 </head>
 <body>
-  
-  <!-- メニューバーの表示 -->
-  <div class="navbar">
-    <!--#にリンクを挿入-->
-    <!--画像が挿入されているところは、ホームに遷移するためのボタンです-->
-    <a href="?do=timeTable" style="width: 80px; height: 30px;"><img src="./images/logo.png" alt="メニュー1" /></a>
-    <a href="?do=theme" class="btn btn-flat"><span>課題</span></a>
-    <a href="?do=friendList" class="btn btn-flat"><span>フレンドリスト</span></a>
-    <a href="?do=setting" class="btn btn-flat"><span>設定</span></a>
-    <?php
-      echo "<a class=\"btn btn-flat\"><span>{$_SESSION['uname']}</span></a>";
-    ?>
-    <a href="?do=sys_login" class="btn btn-flat"><span>ログアウト</span></a>
-    <h1>時間割</h1>
-  </div>
+  <?php
+    $_SESSION['now_page'] = "時間割";
+  ?>
+
   <table id="myTable">
     <tr>
       <th>   </th>
