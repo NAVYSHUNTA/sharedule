@@ -23,6 +23,7 @@
     <a class="btn btn-flat"><span>福岡　太郎</span></a>
     <a href="sys_login.php" class="btn btn-flat"><span>ログアウト</span></a>
   </div>
+  
 </body>
 </html>
  
