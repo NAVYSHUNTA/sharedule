@@ -5,12 +5,19 @@
   $day = $_POST['day'];
   $period = $_POST['period'];
   $classroom_number = $_POST['classroom_number'];
+
+  // 最大の主キー値を取得
+  $sql = "SELECT MAX(subject_id) AS max_id FROM timetable";
+  $result = $conn->query($sql);
+  $row = $result->fetch_assoc();
+  $subject_id = $row['max_id'] + 1;
+
   $sql = "SELECT * FROM user WHERE user_id= '{$u}'  AND user_password='{$p}'";
   $rs = $conn->query($sql);
   if (!$rs) die('エラー: ' . $conn->error);
   $row= $rs->fetch_assoc();
   $sql = "INSERT INTO timetable (subject_id, subject, day, period, classroom_number)
-        VALUES (NULL, '$subject', '$day', $period, $classroom_number)";
+        VALUES ($subject_id, '$subject', '$day', $period, $classroom_number)";
 
   // SQL文の実行
   if ($conn->query($sql) === TRUE) {
