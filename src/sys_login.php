@@ -4,6 +4,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <style>
+        body{
+            background-color: #b0c4de;
+        }
         body {
             display: flex;
             justify-content: center;

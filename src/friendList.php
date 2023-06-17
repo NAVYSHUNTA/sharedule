@@ -7,6 +7,9 @@
 
   <!-- CSS -->
   <style>
+    body{
+      background-color: #b0c4de;
+    }
     .table-container th{
       background: linear-gradient(to bottom right,#E6F1FF, #FFFFFF);
 }
@@ -19,7 +22,9 @@
     .list-container tr{
   background: linear-gradient(to bottom right, #ecece6, #FFFFFF);
 }
+
   </style>
+
   <link rel="stylesheet" href="../css/style.css">
   <title>sharedule</title>
   <script>

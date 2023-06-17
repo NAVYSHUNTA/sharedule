@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <style>
+      body{
+        background-color: #b0c4de;
+      }
   th {
     font-size: 16px; /* フォントサイズを変更 */
     width 100px;
