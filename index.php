@@ -31,7 +31,7 @@ if (isset($_GET['do'])) {//index.php?do=に続くパラメータで実行する�
   }
 }
 
-if ($action != "sys_logout" && $action != "sys_login"){
+if ($action != "sys_logout" && $action != "sys_login" && $action != "goodbye"){
   include('src/pg_header.php'); //ヘッダー部分を読み込む
 }
 include('src/' . $action . '.php'); //指定されたファイルを読み込む  
