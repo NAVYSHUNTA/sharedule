@@ -17,7 +17,7 @@
       <?php
         echo "<a class=\"btn btn-flat\"><span>{$_SESSION['uname']}</span></a>";
       ?>
-      <a href="?do=sys_logout">ログアウト</a>
+      <a href="?do=sys_logout" class="btn btn-flat">ログアウト</a>
     </div>
     <?php
       echo "<h1>{$_SESSION['now_page']}</h1>";
