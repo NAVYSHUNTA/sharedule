@@ -21,7 +21,7 @@
       alert_days_before 締切日
     */
     }else{
-      $_SESSION['login_error'] = 'ユーザー名もしくはパスワードが異なります';
+      $_SESSION['login_error'] = 'ユーザー名もしくはパスワードが異なります。';
       header('Location:?do=sys_login');   
     }
   }
