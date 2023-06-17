@@ -39,7 +39,7 @@
 
     input[type="text"]::placeholder,
         input[type="password"]::placeholder {
-            font-size: 30px;
+            font-size: 25px;
         }
 
 
@@ -65,15 +65,15 @@
         </tr>
         <tr>
             <td class="input-container">ユーザID：</td>
-            <td><input type="text" name="uid" placeholder="ユーザID" style="width: 300px; height: 40px;"></td>
+            <td><input type="text" name="uid" placeholder="ユーザID" style="width: 300px; height: 30px;"></td>
         </tr>
         <tr>
             <td class="input-container">ユーザ名：</td>
-            <td><input type="text" name="user_name" placeholder="ログイン時は不要" style="width: 300px; height: 40px;"></td>
+            <td><input type="text" name="user_name" placeholder="ログイン時は不要" style="width: 300px; height: 30px;"></td>
         </tr>
         <tr>
             <td class="input-container">パスワード：</td>
-            <td><input type="password" name="pass"  placeholder="パスワード" style="width:300px; height: 40px;"></td>
+            <td><input type="password" name="pass"  placeholder="パスワード" style="width:300px; height: 30px;"></td>
         </tr>
     </table>
     <div class="button-container">
