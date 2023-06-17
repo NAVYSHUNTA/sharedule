@@ -69,13 +69,13 @@
         <th>6/18</th>
       </tr>
       <tr>
-        <td>課題</td>
-        <td>課題</td>
-        <td>課題</td>
-        <td>課題</td>
-        <td>課題</td>
-        <td>課題</td>
-        <td>課題</td>
+        <td>課題:オブジェクト指向レポート</td>
+        <td>課題:</td>
+        <td>課題:</td>
+        <td>課題:</td>
+        <td>課題:</td>
+        <td>課題:</td>
+        <td>課題:</td>
       </tr>
     </tbody>
   </table>
