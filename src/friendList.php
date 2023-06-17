@@ -45,7 +45,7 @@
       var friend_request_array = ['九産 太郎', '九産 花子', ''];
 
       // データ行の作成
-      for (var i = 1; i <= 20; i++) {
+      for (var i = 0; i < 20; i++) {
         var dataRow = document.createElement("tr");
         var dataCell1 = document.createElement("td");
         dataCell1.textContent = friend_request_array[Math.min(i, friend_request_array.length - 1)];
@@ -75,11 +75,13 @@
       listHeaderRow.appendChild(listHeaderCell1);
       listThead.appendChild(listHeaderRow);
 
+      var friend_list_array = ['博多 太郎', '博多 花子', ''];
+
       // データ行の作成
-      for (var i = 1; i <= 15; i++) {
+      for (var i = 0; i < 15; i++) {
         var listDataRow = document.createElement("tr");
         var listDataCell1 = document.createElement("td");
-        listDataCell1.textContent = "リストデータ00" + i;
+        listDataCell1.textContent = friend_list_array[Math.min(i, friend_list_array.length - 1)];
         listDataCell1.style.fontSize = "23px"; // 文字のサイズを変更
         listDataRow.appendChild(listDataCell1);
         listTbody.appendChild(listDataRow);
