@@ -113,7 +113,7 @@
     </tr>
   </table>
 
-  <div id="subjectListContainer" class="subject-list-container"></div>
+  <div id="listContainer" class="list"></div>
 
   <script>
     window.onload = function() {
@@ -145,7 +145,7 @@
       tableContainer.appendChild(table);
 
 
-      var subjectListContainer = document.getElementById("themelist-container");
+      var listContainer = document.getElementById("themelist-container");
       var listTable = document.createElement("table");
 
       var listTbody = document.createElement("tbody");
@@ -168,7 +168,7 @@
     };
     var table = document.getElementById("myTable");
     var cells = table.getElementsByTagName("td");
-    var subjectListContainer = document.getElementById("listContainer");
+    var listContainer = document.getElementById("listContainer");
 
     for (var i = 0; i < cells.length; i++) {
       cells[i].addEventListener("mouseover", function() {
@@ -231,7 +231,7 @@
       return listItems;
     }
   </script>
-  <div id="friendContainer" class="friend-container"></div>
+  <div id="friend-container" class="friend-container"></div>
   <div class="form-container">
     <h2>授業科目登録フォーム</h2>
     <form method="post" action="?do=regist_subject">
@@ -251,7 +251,7 @@
     </form>
   </div>
 
-  <div id="themeListContainer" class="theme-list-container"></div>
+  <div id="themelist-container" class="themelist-container"></div>
 </body>
 
 </html>
