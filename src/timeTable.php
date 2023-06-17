@@ -33,10 +33,6 @@
     <title>sharedule</title>
 </head>
 <body>
-  <?php
-    $_SESSION['now_page'] = "時間割";
-  ?>
-
   <table id="myTable">
     <tr>
       <th>   </th>
