@@ -48,7 +48,9 @@
 
     <?php
     if (isset($_POST['bye'])) {
-        header("Location: ?do=sys_login");
+        $_SESSION['uid']   = "";
+        $_SESSION['uname'] = "";
+        header('Location:?do=sys_login');
     }
     ?>
 
