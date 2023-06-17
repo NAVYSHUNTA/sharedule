@@ -48,7 +48,7 @@
 </head>
 
 <body>
-    <form action="?do=goodbye" method="post">
+    <form action="?do=sys_login" method="post">
         <table>
             <tr>
                 <td colspan="2">
