@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>sharedule</title>
 </head>
@@ -20,22 +20,24 @@
     <a href="theme.php" class="btn btn-flat"><span>課題</span></a>
     <a href="friendList.php" class="btn btn-flat"><span>フレンドリスト</span></a>
     <a href="setting.php" class="btn btn-flat"><span>設定</span></a>
-    <a class="btn btn-flat"><span>福岡　太郎</span></a>
+    <?php
+      echo "<a class=\"btn btn-flat\"><span>{$_SESSION['uname']}</span></a>";
+    ?>
     <a href="sys_login.php" class="btn btn-flat"><span>ログアウト</span></a>
     <h1>時間割（初期画面）</h1>
   </div>
   <table id="myTable">
     <tr>
-      <td>   </td>
-      <td>Mon</td>
-      <td>Tue</td>
-      <td>Wen</td>
-      <td>Thu</td>
-      <td>Fri</td>
-      <td>Sat</td>
+      <th>   </th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wen</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
     </tr>
     <tr>
-      <td>一限</td>
+      <th>一限</th>
       <td>Mon-1</td>
       <td>Tue-1</td>
       <td>Wen-1</td>
@@ -44,7 +46,7 @@
       <td>Sat-1</td>
     </tr>
     <tr>
-      <td>二限</td>
+      <th>二限</th>
       <td>Mon-2</td>
       <td>Tue-2</td>
       <td>Wen-2</td>
@@ -53,7 +55,7 @@
       <td>Sat-2</td>
     </tr>
     <tr>
-      <td>三限</td>
+      <th>三限</th>
       <td>Mon-3</td>
       <td>Tue-3</td>
       <td>Wen-3</td>
@@ -62,7 +64,7 @@
       <td>Sat-3</td>
     </tr>
     <tr>
-      <td>四限</td>
+      <th>四限</th>
       <td>Mon-4</td>
       <td>Tue-4</td>
       <td>Wen-4</td>
@@ -71,7 +73,7 @@
       <td>Sat-4</td>
     </tr>
     <tr>
-      <td>五限</td>
+      <th>五限</th>
       <td>Mon-5</td>
       <td>Tue-5</td>
       <td>Wen-5</td>
